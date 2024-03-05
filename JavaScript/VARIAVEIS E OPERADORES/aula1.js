@@ -2,6 +2,8 @@
 Anotações de estudos de JavaScript
 */
 
+                            /*Anotações da aula 1 de JavaScript.*/
+
 console.log("Olá, mundo!"); //retorna o resultado no console
 
 //o ; separa as DECLARAÇÕES. Pode-se dizer que cada comando é uma declaraçao, podendo haver várias declarações na mesma linha. ex.: var a, b, c; a=5; b=6; c=7;
@@ -54,6 +56,89 @@ console.log(telefone);
     console.log(telefone);
 }
 */
+
+                            /*Anotações da aula 2 de JavaScript.*/
+
+        //Operadores:
+//Operadores Aritméticos (matemáticos):  "+"; "-"; "*"; "/"; "++"; "--";
+
+var valor1, valor2, total;
+valor1 = 5;
+valor2 = 2;
+total1 = valor1 + valor2;
+
+console.log(total1); //resultado da operação = 7
+console.log(++total1); //resultado do incremento = 8 (soma +1 no valor da variável)
+console.log(--total1); //resultado do decremento = 6(subtrai -1 no valor da variável)
+
+//Obs.: No console vai aparecer o resultado do decremento como 7 pois está pegando o resultando anterior, que no caso é 8 e fazendo o decremento, por isso está aparecendo como 7. Se comentar os console.log anterior aparece o valor correto
+
+
+//Operador de atribuição: "="; "+="; "-="; "*="; "/="; 
+
+var valor3, valor4;
+valor3 = 5;
+valor4 = 2;
+
+valor3 += valor4; //é o mesmo que escrever valor3 = valor3 + valor4; 
+console.log(valor3); //resultado é 7, pois está somando valor3 + valor4 (5+2) e atribuindo o resultado ao valor3, que é o mostrado no console. O mesmo ocorre para "-="; "*="; "/=";
+
+
+//Operadores de Sequência (concatenação)
+
+var valor5, valor6, total2;
+valor5 = "Fabiano";
+valor6 = "Apoliano";
+
+total2 = valor5 + valor6; //operador para juntar duas strings;
+console.log(total2);
+
+
+//Operadores de Comparação: "=="; "==="; "!="; "!=="; "<"; ">"; "<="; ">=";
+
+var valor7, valor8, total3, total4, total5, total6;
+valor7 = 8;
+valor8 = "8";
+
+total3 = (valor7 == valor8); //compara se valor7 é igual a valor8. Resultado: true;
+total4 = (valor7 === valor8); //compara se o valor e o tipo (numeral ou string) são iguais. Resultado: false;
+total5 = (valor7 != valor8); //compara se valor7 e valor8 são diferentes (não igual). Resultado: false;
+total6 = (valor7 >= valor8); //compara se é maior ou igual. Resultado: true;
+console.log(total3, total4, total5, total6); //retorna valor True ou False;
+
+
+//Operador Condicional (ternário): "?"; ":";
+
+var idade, eleitor;
+idade = 18;
+eleitor = (idade>=18) ? "É eleitor" : "Não é eleitor";
+//         Condição        true           false
+// entre parenteses a condição, depois do "?" valor verdadeiro, depois do ":" valor falso;
+
+console.log(eleitor); //retorna o valor verdadeiro ou o valor falso. Resultado: É eleitor;
+
+
+//Operador lógico (mais de uma condição):"&&"; "||"
+
+var idade1, eleitor1;
+idade1 = 75;
+eleitor1 = (idade1 < 18 || idade1 > 70) ? "Não é eleitor" : "É eleitor"; 
+//                 Condição                   true             false
+//operador "||" significa "ou" e  operador "&&" significa "e";
+
+console.log(eleitor1); //se a idade estiver entre 18 e 70, retorna o valor. Resultado: Não é eleitor 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
