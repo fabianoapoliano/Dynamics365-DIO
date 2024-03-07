@@ -125,9 +125,59 @@ idade1 = 75;
 eleitor1 = (idade1 < 18 || idade1 > 70) ? "Não é eleitor" : "É eleitor"; 
 //                 Condição                   true             false
 //operador "||" significa "ou" e  operador "&&" significa "e";
+//"!" é simbolo de negação, se estiver fora da condição (dos parênteses), significa negação da condição;
 
-console.log(eleitor1); //se a idade estiver entre 18 e 70, retorna o valor. Resultado: Não é eleitor 
+console.log(eleitor1); //se a idade estiver entre 18 e 70, retorna o valor. Resultado: Não é eleitor; 
 
+
+                            /*Anotações da aula 3 de JavaScript.*/
+
+
+//Funções: é como uma pequena "fábrica" onde se tem uma entrada e ele retorna uma saída;
+
+function realParaDolar(real, cotacaoDoalr){ //função de cotação de dolar
+    return real / cotacaoDoalr;
+}
+
+var totalEmDola = realParaDolar (1800, 4.96)
+console.log(totalEmDola);
+
+
+//Objetos: variáveis com muitos valores dentros. Os valores dentro de objetos são chamados "propriedades". Ex.: const carro = {marca:"Ford", modelo:"Ka", ano:2015};
+//Objetos também podem conterm métodos. Métodos são funções colocadas dentro de uma propriedade.
+
+const carro ={
+    marca:"Ford",
+    modelo:"Ka",
+    ano:2015,
+    buzina: function() {console.log("BiBi")}, //método dentro do objeto
+    informacaoCompleta: function(){
+        return "A marca é: " + this.marca + ". O modelo é: " + this.modelo + "."; //this serve para chamar a propriedade que esteja dentro do objeto;
+    }
+    };
+//objeto carro tem propriedades (marca, modelo, ano) e métodos (buzina). Obs.: por convenção, se usa const para objetos;
+
+console.log(carro.marca); //retorna apenas a propriedade marca;
+carro.buzina(); //retorna o método buzina;
+console.log(carro.informacaoCompleta()); //retorna o método informacaoCompleta;
+
+
+//Eventos: ações disparadas pela interação do usário na página. São os eventos que tornam a página interativa e dinâmica;
+/*
+Exemplos:
+    onclick -> disparada quando recebe um click;
+    ondblclick - > disparado quando clique duplo;
+    onmouseover -> disparado quando o mouse está sobre o elemento;
+    onmouseout -> disparado quando o mouse é movido para fora do elemento;
+    onmousedown -> disparado quando o clique do botão for pressionado;
+    onmouseup -> disparado quando o clique do botão é liberado;
+    onchange -> disparado quando o conteúdo é alterado;
+    onload -> disparado quando a página termina de ser carregada;
+    onresize -> disparado quando a janela é redimencionada;
+*/
+
+
+                            /*Anotações da aula 3 de JavaScript.*/
 
 
 
