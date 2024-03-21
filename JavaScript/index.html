@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo JS</title>
+    <style>
+        body {
+            text-align:center;
+        }
+    </style>
 </head>
 
 <body>
-    <script src="C:\Users\fabiano.local\OneDrive\Dynamics\Dynamics365-DIO\JavaScript\index.js">
-               
+    <h1> Aprendendo JavaScript</h1>
+    <h2>Eventos JavaScript</h2>
+    <p id="texto"> </p>
+    <button ondblclick="eventoDblClick()"> Clique aqui </button>
 
+    <div id="testeMouse" onmouseover="eventoOnMouseOver()" onmouseout="eventoOnMouseOut()" style="margin: auto auto; 80%; height: 200px; background: blue"> </div>
+<!--criada uma div com o nome "testeMouse". Quando o mouse sair do elemento (onmouseout), vai chamar a função eventoOnMouseOut-->
 
-    </script>
+    
+    <script src="C:\Users\fabiano.local\OneDrive\Dynamics\Dynamics365-DIO\JavaScript\eventos.js"></script>
 </body>
 
 </html>
