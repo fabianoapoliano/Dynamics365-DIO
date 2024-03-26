@@ -67,3 +67,44 @@ matriz.sort(function (a, b) {return a - b});
 
 
                             /*Anotações da aula 6 de JavaScript.*/
+
+
+//Declarações condicionais (if e else) -> condições de "se" e "se não", podendo, também, existe um "se não, se" (else if);
+
+const lampada ="off";
+
+if (lampada=="on"){ //condicional 
+    console.log("Lampada ligada"); //se a variável estiver "on" mostra Lampada ligada
+} else {
+    console.log("Lampada desligada"); //se não, mostra Lampada desligada
+}
+
+const hora = new Date().getHours(); //metodo que lê a hora atual
+
+console.log(hora);
+
+if (hora < 12){ //se for menor que 12
+    console.log("Bom dia"); //mensagem de Bom dia
+} else if (hora < 18) { //menor quer 18
+    console.log("Boa tarde"); //mensagem de Boa tarde
+} else { // se não se enquadra em nenhuma das duas condições
+    console.log("Boa noite"); //mensagem de bom dia
+}
+
+/*Obs.: Vale lembrar que o código sempre lê de cima para baixa, da esquerda para a direita. Não é necessário colocar (hora >12 && hora < 18)*/
+
+//para verificar o resultado do script abaixo, olhar no validador.If.Else.html
+
+function verificar(){ //função que dispara quando o onclick for chamado
+    let nome = document.getElementById("nome").value;
+    
+    if (nome=="" || nome==null){ //se o nome for vazio ou nulo
+        let paragrafo = document.getElementById("teste"); //variável paragrafo, que é o que chama o p "teste" no HTML;
+        paragrafo.innerHTML = "O campo não pode ser vazio!"; //mensagem de alerta
+        paragrafo.style.color = "red"; //muda a cor da mensagem de alerta para vermelho
+    } else {
+        let paragrafo = document.getElementById("teste");
+        paragrafo.innerHTML = "O campo foi preenchido!" ;
+        paragrafo.style.color = "green";
+    }
+}
